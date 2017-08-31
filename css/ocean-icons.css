@@ -1,31 +1,31 @@
 @font-face {
-  font-family: 'ocean-icons';
-  src: url('../fonts/ocean-icons.woff2?17288107') format('woff2'),
-       url('../fonts/ocean-icons.woff?17288107') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'ocean-icons';
+	src: url('../fonts/ocean-icons.woff2?17288107') format('woff2'),
+		  url('../fonts/ocean-icons.woff?17288107') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .icon::before {
-  font-family: "ocean-icons";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
+	font-family: "ocean-icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
 
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
+	display: inline-block;
+	text-decoration: inherit;
+	text-align: center;
 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1;
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1;
 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-users:before { content: '\e800'; }
