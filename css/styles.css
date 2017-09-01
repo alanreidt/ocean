@@ -77,6 +77,27 @@ textarea {
 	MODULE
 	========================================================= */
 
+/* BUTTON */
+
+.button {
+	display: inline-block;
+	padding: 0.8rem 3.5rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #81b4eb;
+	background-color: #fff;
+	border: 2px solid #81b4eb;
+	border-radius: 2.5rem;
+	text-transform: capitalize;
+	transition: all .3s ease;
+}
+
+.button:hover {
+	color: #fff;
+	background-color: #81b4eb;
+}
+
 /* SLIDER */
 
 .slider {
@@ -258,3 +279,15 @@ textarea {
 	line-height: 1.6;
 	color: #666;
 }
+
+/* ARTICLES */
+
+.articles {
+	color: #81b4eb;
+	background-color: #fff;
+}
+
+.article__button-wrapper {
+	margin-top: 35px;
+}
+
