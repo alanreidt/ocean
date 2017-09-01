@@ -124,6 +124,55 @@ textarea {
 	background-color: #81b4eb;
 }
 
+/* SLIDE GRID */
+
+.slide-grid::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.slide-grid:nth-of-type(odd) .slide-grid__item {
+	float: right;
+}
+
+.slide-grid:nth-of-type(even) .slide-grid__item {
+	float: left;
+}
+
+.slide-grid:nth-of-type(odd) .slide-grid__img {
+	float: right;
+}
+
+.slide-grid:nth-of-type(even) .slide-grid__img {
+	float: left;
+}
+
+.slide-grid__img-wrapper {
+	width: 50%;
+}
+
+.slide-grid__content {
+	width: 50%;
+	padding: 150px 8% 0;
+}
+
+.slide-grid__title {
+	margin-top: 0;
+	margin-bottom: 5%;
+	font-size: 1.9rem;
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+.slide-grid__paragraph {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	line-height: 1.9;
+}
+
+
 /* =========================================================
 	LAYOUT
 	========================================================= */
