@@ -57,9 +57,60 @@ textarea {
 	resize: none;
 }
 
+.hidden {
+	display: none;
+}
+
 /* =========================================================
 	MODULE
 	========================================================= */
+
+/* SLIDER */
+
+.slider {
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.slider__item {
+	display: none;
+}
+
+.slider__item_active {
+	display: block;
+}
+
+.slider-nav {
+	position: absolute;
+	bottom: 10px;
+
+	width: 100%;
+
+	font-size: 0;
+	text-align: center;
+	z-index: 300;
+}
+
+.slider-nav__item {
+	display: inline-block;
+}
+
+.slider-nav__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.slider-nav__dot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: var(--base-font-size);
+	background-color: #cdd7e2;
+	border-radius: 50%;
+}
+
+.slider-nav__dot_active {
+	background-color: #81b4eb;
+}
 
 /* =========================================================
 	LAYOUT
@@ -114,4 +165,35 @@ textarea {
 .hero__button:hover {
 	color: #fff;
 	background-color: #a2d1ff;
+}
+
+/* TAGLINES */
+
+.taglines {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.tagline-group {
+	max-width: 980px;
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.tagline__title {
+	margin-top: 0;
+	margin-bottom: 3rem;
+	font-size: 2.1rem;
+	font-weight: 300;
+	color: #81b4eb;
+}
+
+.tagline__content {
+	margin: 0;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	color: #666;
 }
