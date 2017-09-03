@@ -73,6 +73,10 @@ textarea {
 	overflow: hidden;
 }
 
+.spacer {
+	height: 600px;
+}
+
 /* =========================================================
 	MODULE
 	========================================================= */
@@ -93,20 +97,20 @@ textarea {
 	vertical-align: top;
 }
 
-.col-2 {
-	width: 16.66666%;
-}
-
 .col-3 {
 	width: 25%;
+}
+
+.col-5 {
+	width: 41.66667%;
 }
 
 .col-6 {
 	width: 50%;
 }
 
-.col-8 {
-	width: 83.33334%;
+.col-7 {
+	width: 58.33333%;
 }
 
 .col-12 {
@@ -163,6 +167,11 @@ textarea {
 
 /* BUTTON */
 
+button.button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
 .button {
 	display: inline-block;
 	padding: 0.8rem 3.5rem;
@@ -180,6 +189,43 @@ textarea {
 .button:hover {
 	color: #fff;
 	background-color: #81b4eb;
+}
+
+/* FORM CONTROL */
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.75rem 1.75rem;
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #55595c;
+	background-color: #fff;
+	border: 1px solid #68a8e8;
+	border-radius: 2.5rem;
+}
+
+.form-control:focus {
+	border-color: #1768A9;
+	outline: 0;
+}
+
+.form-control::placeholder {
+	color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #999;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #999;
+}
+
+.form-control::-moz-placeholder {
+	opacity: 1;
 }
 
 /* SLIDER */
@@ -257,6 +303,61 @@ textarea {
 	margin: 0;
 	font-size: 1.4rem;
 	line-height: 1.6;
+}
+
+/* CONTACT FORM */
+
+.contact-form__form-control {
+	margin-bottom: 15px;
+}
+
+.contact-form__button-wrapper {
+	text-align: right;
+}
+
+.contact-form__message {
+	padding-top: 1.15rem;
+	padding-bottom: 1.15rem;
+}
+
+/* SOCIALS */
+
+:root {
+	--social-icon-diameter: 40px;
+}
+
+.socials {
+	font-size: 0;
+}
+
+.socials__item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.socials__item:not(:last-child) {
+	margin-right: 3%;
+}
+
+.socials__link {
+	display: inline-block;
+
+	width: var(--social-icon-diameter);
+	height: var(--social-icon-diameter);
+	line-height: var(--social-icon-diameter);
+
+	font-size: var(--base-font-size);
+	color: #81b4eb;
+	background-color: #fff;
+	border: 1px solid #81b4eb;
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+
+.socials__link:hover {
+	color: #fff;
+	background-color: #81b4eb;
 }
 
 
@@ -397,5 +498,33 @@ textarea {
 .feature__desc {
 	margin: 0;
 	font-size: ;
+	line-height: 1.8;
+}
+
+/* CONTACTS */
+
+.contacts__container {
+	max-width: 1530px;
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.contact {
+	padding-left: 3%;
+}
+
+.contact__title {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-transform: capitalize;
+}
+
+.contact__info {
+	margin-top: 0;
+	margin-bottom: 5%;
 	line-height: 1.8;
 }
