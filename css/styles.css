@@ -414,7 +414,7 @@ button.button {
 	height: 800px;
 	padding-top: 210px;
 	color: #fff;
-	background: url(../img/bg-hero.jpg) #a1d0fe center top / cover fixed no-repeat;
+	background: url(../img/bg-hero.jpg) #a1d0fe center top / 1900px 800px fixed no-repeat;
 	text-align: center;
 }
 
