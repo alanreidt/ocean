@@ -19,17 +19,17 @@
 				Feel free to use this for any purpose
 			</p>
 			<div class="hero__button-wrapper">
-				<a href="#" class="hero__button">Explore</a>
+				<a href="#" class="hero__button" tabindex="1">Explore</a>
 			</div>
 		</header>
 
 		<section class="taglines">
 			<h1 class="visually-hidden">Taglines</h1>
 			<div class="tagline-group  slider">
-				<ul class="slider-nav  tagline__slider-nav">
-					<li class="slider-nav__item"><a href="#" class="slider-nav__dot  slider-nav__dot_active"></a></li>
-					<li class="slider-nav__item"><a href="#" class="slider-nav__dot"></a></li>
-					<li class="slider-nav__item"><a href="#" class="slider-nav__dot"></a></li>
+				<ul class="slider-nav  tagline__slider-nav" aria-label="tagline slider's navigation">
+					<li class="slider-nav__item"><a href="#" class="slider-nav__dot  slider-nav__dot_active" tabindex="2" aria-label="first tagline"></a></li>
+					<li class="slider-nav__item"><a href="#" class="slider-nav__dot" tabindex="2" aria-label="second tagline"></a></li>
+					<li class="slider-nav__item"><a href="#" class="slider-nav__dot" tabindex="2" aria-label="third tagline"></a></li>
 				</ul>
 
 				<section class="tagline  slider__item  slider__item_active">
@@ -70,7 +70,7 @@
 						</p>
 					</div>
 					<div class="article__button-wrapper">
-						<a href="" class="button article__button">Read more</a>
+						<a href="" class="button article__button" tabindex="3">Read more</a>
 					</div>
 				</div>
 			</article>
@@ -88,7 +88,7 @@
 						</p>
 					</div>
 					<div class="article__button-wrapper">
-						<a href="" class="button article__button">Read more</a>
+						<a href="" class="button article__button" tabindex="3">Read more</a>
 					</div>
 				</div>
 			</article>
@@ -106,7 +106,7 @@
 				<div class="row">
 					<div class="col  col-3">
 						<section class="feature">
-							<i class="icon  icon-mixcloud  feature__icon"></i>
+							<i class="icon  icon-mixcloud  feature__icon" aria-hidden="true"></i>
 							<h3 class="feature__title">Vestinbulum ornare</h3>
 							<p class="feature__desc">
 								Nullam eget lectus ut&nbsp;felis aliquam laoreet eget eu&nbsp;dui. Curabitur in&nbsp;imperdiet.
@@ -116,7 +116,7 @@
 
 					<div class="col  col-3">
 						<section class="feature">
-							<i class="icon  icon-chart-line  feature__icon"></i>
+							<i class="icon  icon-chart-line  feature__icon" aria-hidden="true"></i>
 							<h3 class="feature__title">Vestinbulum ornare</h3>
 							<p class="feature__desc">
 								Nullam eget lectus ut&nbsp;felis aliquam laoreet eget eu&nbsp;dui. Curabitur in&nbsp;imperdiet.
@@ -126,7 +126,7 @@
 
 					<div class="col  col-3">
 						<section class="feature">
-							<i class="icon  icon-users  feature__icon"></i>
+							<i class="icon  icon-users  feature__icon" aria-hidden="true"></i>
 							<h3 class="feature__title">Vestinbulum ornare</h3>
 							<p class="feature__desc">
 								Nullam eget lectus ut&nbsp;felis aliquam laoreet eget eu&nbsp;dui. Curabitur in&nbsp;imperdiet.
@@ -136,7 +136,7 @@
 
 					<div class="col  col-3">
 						<section class="feature">
-							<i class="icon  icon-globe  feature__icon"></i>
+							<i class="icon  icon-globe  feature__icon" aria-hidden="true"></i>
 							<h3 class="feature__title">Vestinbulum ornare</h3>
 							<p class="feature__desc">
 								Nullam eget lectus ut&nbsp;felis aliquam laoreet eget eu&nbsp;dui. Curabitur in&nbsp;imperdiet.
@@ -160,16 +160,16 @@
 					<div class="col  col-7">
 						<form action="#" class="row  contact-form">
 							<div class="col  col-6">
-								<input class="form-control  contact-form__form-control" type="text" name="name-input-contacts" placeholder="Name" maxlength="25" required>
+								<input class="form-control  contact-form__form-control" type="text" name="name-input-contacts" tabindex="4" placeholder="Name" maxlength="25" required>
 							</div>
 							<div class="col  col-6">
-								<input class="form-control  contact-form__form-control" type="email" name="email-input-contacts" placeholder="Email" maxlength="30" required>
+								<input class="form-control  contact-form__form-control" type="email" name="email-input-contacts" tabindex="4" placeholder="Email" maxlength="30" required>
 							</div>
 							<div class="col  col-12">
-								<input class="form-control  contact-form__form-control" type="text" name="subject-input-contacts" placeholder="Subject" maxlength="60" required>
-								<textarea class="form-control  contact-form__form-control  contact-form__message" name="message-textarea-contacts" placeholder="Message" rows="6" minlength="20" maxlength="700" required></textarea>
+								<input class="form-control  contact-form__form-control" type="text" name="subject-input-contacts" tabindex="4" placeholder="Subject" maxlength="60" required>
+								<textarea class="form-control  contact-form__form-control  contact-form__message" name="message-textarea-contacts" tabindex="4" placeholder="Message" rows="6" minlength="20" maxlength="700" required></textarea>
 								<div class="contact-form__button-wrapper">
-									<button class="button" type="submit">Submit</button>
+									<button class="button" type="submit" tabindex="4">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -182,15 +182,15 @@
 							<br>
 							San Francisco, CA, USA
 						</p>
-						<p class="contact__info  contact__email">Email: <a href="mailto:info@company.com">info@company.com</a></p>
-						<p class="contact__info  contact__phone">Phone: <a href="tel:0100100110">010&ndash;010&ndash;0110</a></p>
+						<p class="contact__info  contact__email">Email: <a href="mailto:info@company.com" tabindex="5">info@company.com</a></p>
+						<p class="contact__info  contact__phone">Phone: <a href="tel:0100100110" tabindex="5">010&ndash;010&ndash;0110</a></p>
 
 						<ul class="socials  footer__socials">
-							<li class="socials__item"><a href="#" class="socials__link" title="facebook" aria-label="facebook"><i class="icon  icon-facebook" aria-hidden="true"></i></a></li>
-							<li class="socials__item"><a href="#" class="socials__link" title="google plus" aria-label="google plus"><i class="icon  icon-gplus" aria-hidden="true"></i></a></li>
-							<li class="socials__item"><a href="#" class="socials__link" title="twitter" aria-label="twitter"><i class="icon  icon-twitter" aria-hidden="true"></i></a></li>
-							<li class="socials__item"><a href="#" class="socials__link" title="behance" aria-label="behance"><i class="icon  icon-behance" aria-hidden="true"></i></a></li>
-							<li class="socials__item"><a href="#" class="socials__link" title="linkedin" aria-label="linkedin"><i class="icon  icon-linkedin" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a href="#" class="socials__link" tabindex="6" title="facebook" aria-label="facebook"><i class="icon  icon-facebook" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a href="#" class="socials__link" tabindex="6" title="google plus" aria-label="google plus"><i class="icon  icon-gplus" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a href="#" class="socials__link" tabindex="6" title="twitter" aria-label="twitter"><i class="icon  icon-twitter" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a href="#" class="socials__link" tabindex="6" title="behance" aria-label="behance"><i class="icon  icon-behance" aria-hidden="true"></i></a></li>
+							<li class="socials__item"><a href="#" class="socials__link" tabindex="6" title="linkedin" aria-label="linkedin"><i class="icon  icon-linkedin" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
