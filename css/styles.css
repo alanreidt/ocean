@@ -204,6 +204,10 @@ button.button {
 	cursor: pointer;
 }
 
+a.button {
+	text-decoration: none;
+}
+
 .button {
 	display: inline-block;
 	vertical-align: middle;
@@ -217,8 +221,11 @@ button.button {
 	border: 2px solid #81b4eb;
 	border-radius: 2.5rem;
 	text-transform: capitalize;
-	-webkit-transition: all .3s ease;
-	transition: all .3s ease;
+
+	-webkit-transition: color .3s ease,
+							  background-color .3s ease;
+			  transition: color .3s ease,
+							  background-color .3s ease;
 }
 
 .button:hover,
@@ -248,10 +255,6 @@ button.button {
 	outline: 0;
 }
 
-.form-control::placeholder {
-	color: #999;
-}
-
 .form-control::-webkit-input-placeholder {
 	color: #999;
 }
@@ -262,6 +265,25 @@ button.button {
 
 .form-control::-moz-placeholder {
 	opacity: 1;
+}
+
+.form-control::placeholder {
+	color: #999;
+}
+
+/* CONTACT FORM */
+
+.contact-form__form-control {
+	margin-bottom: 15px;
+}
+
+.contact-form__button-wrapper {
+	text-align: right;
+}
+
+.contact-form__message {
+	padding-top: 1.15rem;
+	padding-bottom: 1.15rem;
 }
 
 /* SLIDER */
@@ -344,21 +366,6 @@ button.button {
 	margin: 0;
 	font-size: 1.4rem;
 	line-height: 1.6;
-}
-
-/* CONTACT FORM */
-
-.contact-form__form-control {
-	margin-bottom: 15px;
-}
-
-.contact-form__button-wrapper {
-	text-align: right;
-}
-
-.contact-form__message {
-	padding-top: 1.15rem;
-	padding-bottom: 1.15rem;
 }
 
 /* SOCIALS */
