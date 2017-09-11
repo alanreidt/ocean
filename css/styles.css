@@ -156,6 +156,7 @@ textarea {
 .slide-grid__title {
 	margin-top: 0;
 	margin-bottom: 5%;
+
 	font-size: 1.9rem;
 	font-weight: 300;
 	line-height: 1.15;
@@ -164,6 +165,7 @@ textarea {
 .slide-grid__paragraph {
 	margin-top: 0;
 	margin-bottom: 1rem;
+
 	font-size: 1.4rem;
 	font-weight: 300;
 	line-height: 1.9;
@@ -212,6 +214,7 @@ a.button {
 	display: block;
 	width: 100%;
 	padding: 0.75rem 1.75rem;
+
 	font-family: inherit;
 	font-weight: 300;
 	font-size: 1.2rem;
@@ -266,8 +269,9 @@ a.button {
 
 .slider {
 	position: relative;
-	padding-bottom: 60px;
 	z-index: 200;
+
+	padding-bottom: 60px;
 }
 
 .slider__item {
@@ -285,12 +289,12 @@ a.button {
 	list-style-type: none;
 
 	position: absolute;
+	z-index: 300;
 	bottom: 10px;
 
 	width: 100%;
 	font-size: 0;
 	text-align: center;
-	z-index: 300;
 }
 
 .slider-nav__item {
@@ -331,10 +335,11 @@ a.button {
 }
 
 .section__title {
-	font-size: 2.1rem;
-	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 1.8rem;
+
+	font-size: 2.1rem;
+	font-weight: 400;
 }
 
 .section__desc {
@@ -402,6 +407,7 @@ a.button {
 	width: 65%;
 	height: 1px;
 	margin: 1rem auto;
+
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -427,6 +433,7 @@ a.button {
 .hero {
 	height: 800px;
 	padding-top: 210px;
+
 	color: #fff;
 	background: url(../img/bg-hero.jpg) #a1d0fe center top / 1900px 800px fixed no-repeat;
 	text-align: center;
@@ -435,6 +442,7 @@ a.button {
 .hero__title {
 	margin-top: 0;
 	margin-bottom: 3.5rem;
+
 	font-size: 4.5rem;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -469,8 +477,10 @@ a.button {
 	text-decoration: none;
 	text-transform: capitalize;
 
-	-webkit-transition: all .3s ease;
-			  transition: all .3s ease;
+	-webkit-transition: color .3s ease,
+							  background-color .3s ease;
+			  transition: color .3s ease,
+							  background-color .3s ease;
 }
 
 .hero__button:hover,
@@ -484,6 +494,7 @@ a.button {
 .taglines {
 	padding-top: 80px;
 	padding-bottom: 80px;
+
 	background-color: #fff;
 	text-align: center;
 }
@@ -495,6 +506,7 @@ a.button {
 .tagline__title {
 	margin-top: 0;
 	margin-bottom: 3rem;
+
 	font-size: 2.1rem;
 	font-weight: 300;
 	line-height: 1.15;
@@ -503,6 +515,7 @@ a.button {
 
 .tagline__content {
 	margin: 0;
+
 	font-size: 1.3rem;
 	font-weight: 300;
 	line-height: 1.6;
@@ -534,6 +547,7 @@ a.button {
 	max-width: 400px;
 	margin: auto;
 	padding: 3rem;
+
 	background-color: #d3e6f8;
 	border: 1px solid #fff;
 }
@@ -541,6 +555,7 @@ a.button {
 .feature__icon {
 	width: 100%;
 	margin-bottom: 2rem;
+
 	font-size: 5em;
 	color: #81b4eb;
 	text-align: center;
@@ -549,6 +564,7 @@ a.button {
 .feature__title {
 	margin-top: 0;
 	margin-bottom: 1.4rem;
+
 	font-size: 1.75rem;
 	font-weight: 400;
 }
@@ -572,6 +588,7 @@ a.button {
 .contact__title {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
+
 	font-size: 1.6rem;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -580,6 +597,7 @@ a.button {
 .contact__info {
 	margin-top: 0;
 	margin-bottom: 5%;
+
 	font-weight: 300;
 	line-height: 1.8;
 }
@@ -595,6 +613,7 @@ a.button {
 
 .footer__copyright {
 	margin: 0;
+
 	font-size: 1.3rem;
 	font-weight: 300;
 	line-height: 1.5;
