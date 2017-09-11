@@ -34,32 +34,6 @@ img {
 	max-width: 100%;
 }
 
-h1,
-h2,
-h3 {
-	font-weight: 400;
-}
-
-p {
-	font-weight: 300;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-a {
-	color: #81b4eb;
-	text-decoration: none;
-}
-
-a:hover,
-a:focus {
-	color: #014c8c;
-}
-
 textarea {
 	resize: none;
 }
@@ -83,6 +57,7 @@ textarea {
 .copyright {
 	margin: 0;
 	font-size: 1.3rem;
+	font-weight: 300;
 	line-height: 1.5;
 	color: #999;
 }
@@ -198,6 +173,7 @@ textarea {
 	margin-top: 0;
 	margin-bottom: 1rem;
 	font-size: 1.4rem;
+	font-weight: 300;
 	line-height: 1.9;
 }
 
@@ -367,6 +343,7 @@ a.button {
 
 .section__title {
 	font-size: 2.1rem;
+	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 1.8rem;
 }
@@ -374,6 +351,7 @@ a.button {
 .section__desc {
 	margin: 0;
 	font-size: 1.4rem;
+	font-weight: 300;
 	line-height: 1.6;
 }
 
@@ -384,6 +362,11 @@ a.button {
 }
 
 .socials {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style-type: none;
+
 	font-size: 0;
 }
 
@@ -410,7 +393,12 @@ a.button {
 	background-color: #fff;
 	border: 1px solid #81b4eb;
 	border-radius: 50%;
-	transition: all .3s ease;
+	text-decoration: none;
+
+	-webkit-transition: color .3s ease,
+							  background-color .3s ease;
+			  transition: color .3s ease,
+							  background-color .3s ease;
 }
 
 .socials__link:hover,
@@ -423,6 +411,18 @@ a.button {
 /* =========================================================
 	LAYOUT
 	========================================================= */
+
+/* PAGE */
+
+.page__link {
+	color: #81b4eb;
+	text-decoration: none;
+}
+
+.page__link:hover,
+.page__link:focus {
+	color: #014c8c;
+}
 
 /* HERO */
 
@@ -438,12 +438,14 @@ a.button {
 	margin-top: 0;
 	margin-bottom: 3.5rem;
 	font-size: 4.5rem;
+	font-weight: 400;
 	text-transform: capitalize;
 }
 
 .hero__desc {
 	margin: 0;
 	font-size: 2rem;
+	font-weight: 300;
 	line-height: 1.5;
 }
 
@@ -466,7 +468,9 @@ a.button {
 	color: #a1c7f1;
 	background-color: #fff;
 	border-radius: 0.5rem;
+	text-decoration: none;
 	text-transform: capitalize;
+
 	-webkit-transition: all .3s ease;
 			  transition: all .3s ease;
 }
@@ -504,6 +508,7 @@ a.button {
 .tagline__content {
 	margin: 0;
 	font-size: 1.3rem;
+	font-weight: 300;
 	line-height: 1.6;
 	color: #666;
 }
@@ -552,10 +557,12 @@ a.button {
 	margin-top: 0;
 	margin-bottom: 1.4rem;
 	font-size: 1.75rem;
+	font-weight: 400;
 }
 
 .feature__desc {
 	margin: 0;
+	font-weight: 300;
 	line-height: 1.8;
 }
 
@@ -576,12 +583,14 @@ a.button {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	font-size: 1.6rem;
+	font-weight: 400;
 	text-transform: capitalize;
 }
 
 .contact__info {
 	margin-top: 0;
 	margin-bottom: 5%;
+	font-weight: 300;
 	line-height: 1.8;
 }
 
