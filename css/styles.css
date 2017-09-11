@@ -115,9 +115,13 @@ textarea {
 
 /* GRID */
 
+:root {
+	--grid-gap: 15px;
+}
+
 .row {
-	margin-right: -15px;
-	margin-left: -15px;
+	margin-right: calc(-1 * var(--grid-gap));
+	margin-left: calc(-1 * var(--grid-gap));
 	font-size: 0;
 }
 
@@ -125,8 +129,8 @@ textarea {
 	display: inline-block;
 	vertical-align: top;
 
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: var(--grid-gap);
+	padding-left: var(--grid-gap);
 	font-size: var(--base-font-size);
 }
 
@@ -307,11 +311,15 @@ a.button {
 }
 
 .slider-nav {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style-type: none;
+
 	position: absolute;
 	bottom: 10px;
 
 	width: 100%;
-
 	font-size: 0;
 	text-align: center;
 	z-index: 300;
@@ -330,6 +338,7 @@ a.button {
 	display: inline-block;
 	width: var(--slider-nav-dot-diameter);
 	height: var(--slider-nav-dot-diameter);
+
 	font-size: var(--base-font-size);
 	background-color: #cdd7e2;
 	border-radius: 50%;
