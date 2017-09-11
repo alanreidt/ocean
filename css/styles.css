@@ -7,6 +7,7 @@
 :root {
 	--base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	--base-font-size: 19px;
+	--site-padding: 15px;
 }
 
 /* SETUP */
@@ -38,6 +39,25 @@ textarea {
 	resize: none;
 }
 
+/* COMMON STYLES */
+
+.spacer {
+	height: 600px;
+}
+
+/* container */
+
+.section__header,
+.tagline-group,
+.features__container,
+.contacts__container {
+	margin: auto;
+	padding-right: var(--site-padding);
+	padding-left: var(--site-padding);
+}
+
+/* hide semantic elements */
+
 .visually-hidden {
 	position: absolute;
 
@@ -54,35 +74,6 @@ textarea {
 	overflow: hidden;
 }
 
-.copyright {
-	margin: 0;
-	font-size: 1.3rem;
-	font-weight: 300;
-	line-height: 1.5;
-	color: #999;
-}
-
-.divider {
-	width: 65%;
-	height: 1px;
-	margin: 1rem auto;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.spacer {
-	height: 600px;
-}
-
-/**
-	.section__header,
-	.tagline__group,
-	.features__container,
-	.contacts__container {
-		margin: auto;
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-*/
 
 /* =========================================================
 	MODULE
@@ -334,10 +325,7 @@ a.button {
 
 .section__header {
 	max-width: 730px;
-	margin: auto;
 	margin-bottom: 5rem;
-	padding-right: 15px;
-	padding-left: 15px;
 	text-align: center;
 }
 
@@ -405,6 +393,15 @@ a.button {
 .socials__link:focus {
 	color: #fff;
 	background-color: #81b4eb;
+}
+
+/* DIVIDER */
+
+.divider {
+	width: 65%;
+	height: 1px;
+	margin: 1rem auto;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
@@ -492,9 +489,6 @@ a.button {
 
 .tagline-group {
 	max-width: 980px;
-	margin: auto;
-	padding-right: 15px;
-	padding-left: 15px;
 }
 
 .tagline__title {
@@ -532,9 +526,6 @@ a.button {
 
 .features__container {
 	max-width: 1760px;
-	margin: auto;
-	padding-right: 15px;
-	padding-left: 15px;
 }
 
 .feature {
@@ -570,9 +561,6 @@ a.button {
 
 .contacts__container {
 	max-width: 1530px;
-	margin: auto;
-	padding-right: 15px;
-	padding-left: 15px;
 }
 
 .contact {
@@ -600,4 +588,13 @@ a.button {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	text-align: center;
+}
+
+
+.footer__copyright {
+	margin: 0;
+	font-size: 1.3rem;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #999;
 }
