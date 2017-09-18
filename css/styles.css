@@ -45,7 +45,7 @@ textarea {
 	height: 600px;
 }
 
-/* container */
+/* %container */
 
 .section__header,
 .tagline-group,
@@ -78,6 +78,18 @@ textarea {
 /* =========================================================
 	MODULE
 	========================================================= */
+
+/* PAGE */
+
+.page__link {
+	color: #81b4eb;
+	text-decoration: none;
+}
+
+.page__link:hover,
+.page__link:focus {
+	color: #014c8c;
+}
 
 /* GRID */
 
@@ -415,18 +427,6 @@ a.button {
 /* =========================================================
 	LAYOUT
 	========================================================= */
-
-/* PAGE */
-
-.page__link {
-	color: #81b4eb;
-	text-decoration: none;
-}
-
-.page__link:hover,
-.page__link:focus {
-	color: #014c8c;
-}
 
 /* HERO */
 
