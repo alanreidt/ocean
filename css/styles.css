@@ -311,7 +311,7 @@ a.button {
 
 .slider-nav__item {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .slider-nav__item:not(:last-child) {
@@ -320,6 +320,8 @@ a.button {
 
 .slider-nav__dot {
 	display: inline-block;
+	vertical-align: middle;
+
 	width: var(--slider-nav-dot-diameter);
 	height: var(--slider-nav-dot-diameter);
 
@@ -389,6 +391,7 @@ a.button {
 
 .socials__link {
 	display: inline-block;
+	vertical-align: middle;
 
 	width: var(--social-icon-diameter);
 	height: var(--social-icon-diameter);
